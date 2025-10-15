@@ -1,0 +1,185 @@
+.home-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    animation: bottomIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 2;
+    color: grey;
+    margin-top: 20px;
+    animation: bottomIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.cta-section button {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px lightsteelblue;
+
+    animation: bottomIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+
+.cta-1 {
+    background-color: lightblue;
+    color: white;
+}
+
+.cta-2 {
+    background-color: transparent;
+    color: lightblue;
+    border: 2px solid lightblue;
+}
+
+.cta-section button:hover {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.social-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.social-section i {
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    color: grey;
+
+    animation: bottomIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.social-section i:hover {
+    color: lightblue;
+    border-color: lightblue;
+    transform: scale(1.1);
+}
+
+.home-img {
+    width: 60%;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+
+    animation: imgIn 1.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* 
+* Animations Styles
+*/
+
+@keyframes bottomIn {
+    from {
+        transform: translateY(250px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imgIn {
+    from {
+        transform: translateY(250px) scale(0.8);
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/*
+*  Responsive Styles
+*/
+
+@media screen and (max-width: 1000px) {
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .home-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+
+    .home-content p {
+        margin-top: 0;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-section {
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .home-img {
+        display: none ;
+    }
+
+}

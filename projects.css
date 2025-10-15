@@ -1,0 +1,87 @@
+.projects-content1, .projects-content2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.projects-content1 h2, .projects-content2 h2 {
+    padding-top: 40px;
+}
+
+.projects-content1 h1 {
+    animation: bottomIn 1.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.projects-content1 h2 {
+    animation: bottomIn 1.5s ease-in-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.projects-current {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+
+    animation: bottomIn 1.5s ease-in-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.projects-current p {
+    padding: 20px 0;
+    line-height: 1.5rem;
+    max-width: 400px;
+}
+
+.projects-content2 h2 {
+    animation: bottomIn 1.5s ease-in-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+.projects-completed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+
+    animation: bottomIn 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.projects-completed p {
+    padding: 20px 0;
+    line-height: 1.5rem;
+    max-width: 400px;
+}
+
+.projects-current img, .projects-completed img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px lightsteelblue;
+}
+
+/* 
+* Animations Styles
+*/
+
+@keyframes bottomIn {
+    from {
+        transform: translateY(250px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
