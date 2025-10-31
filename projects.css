@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     gap: 40px;
     padding: 40px 20px;
@@ -49,7 +48,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     gap: 40px;
     padding: 40px 20px;
@@ -70,6 +68,7 @@
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 10px 20px lightsteelblue;
+    margin-bottom: 20px;
 }
 
 /* 
