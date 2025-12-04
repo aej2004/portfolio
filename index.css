@@ -111,6 +111,7 @@
     animation: imgIn 1.5s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
+    z-index: -1;
 }
 
 /* 
