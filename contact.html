@@ -11,6 +11,9 @@
         <!-- Styles -->
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="contact.css">
+
+        <!-- Scripts -->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <section id="projects">
@@ -25,27 +28,43 @@
             </header>
         </section>
 
-        <div class="contact-content">
-            <h1>Contact Me</h1>
+        <div id="password-screen" class="password-container">
+            <div class="password-box">
+              <h2 class="pass-title">🔒 Protected Page</h2>
+          
+              <input type="password" id="passInput" placeholder="Enter password">
+          
+              <button onclick="checkPass()" class="pass-btn">Unlock</button>
+          
+              <p id="passError" class="pass-error">Incorrect password</p>
+            </div>
         </div>
+          
+        <div id="protected-content" style="display:none;">
 
-        <section class="contact-info">
-            <div class="contact-phone">
-                <i class="fa-solid fa-phone"></i>
-                <h2>Phone</h2>
-                <p>(678) 343-0686</p>
-            </div>
-            <div class="contact-email">
-                <i class="fa-solid fa-envelope"></i>
-                <h2>Email</h2>
-                <p>avery.jones@vikings.berry.edu</p>
-            </div>
-            <div class="contact-discord">
-                <i class="fa-brands fa-discord"></i>
-                <h2>Discord</h2>
-                <p>averyjones3024</p>
-            </div>
-        </section>
+                <div class="contact-content">
+                    <h1>Contact Me</h1>
+                </div>
+
+                <section class="contact-info">
+                    <div class="contact-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <h2>Phone</h2>
+                        <p>(678) 343-0686</p>
+                    </div>
+                    <div class="contact-email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2>Email</h2>
+                        <p>avery.jones@vikings.berry.edu</p>
+                    </div>
+                    <div class="contact-discord">
+                        <i class="fa-brands fa-discord"></i>
+                        <h2>Discord</h2>
+                        <p>averyjones3024</p>
+                    </div>
+                </section>
+        </div>
+            
     </body>
 
 </html>

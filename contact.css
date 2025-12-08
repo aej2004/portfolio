@@ -47,6 +47,81 @@
     opacity: 0;
 }
 
+/* Password screen styles */
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; /* pushes below nav */
+
+    background: linear-gradient(135deg, lightblue, lightsteelblue);
+    min-height: calc(100vh - 100px);
+}
+
+.password-box {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: fadeIn 0.7s ease forwards;
+}
+
+.pass-title {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+#passInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    outline: none;
+    font-size: 1rem;
+}
+
+#passInput:focus {
+    border-color: lightblue;
+}
+
+.pass-btn {
+    background: lightblue;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.pass-btn:hover {
+    background: lightsteelblue;
+}
+
+.pass-error {
+    margin-top: 15px;
+    color: plum;
+    display: none;
+    font-weight: 600;
+}
+
+/* fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* 
 * Animations Styles
 */
