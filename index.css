@@ -18,7 +18,7 @@
     font-size: 18px;
     line-height: 2;
     color: grey;
-    margin-top: 20px;
+    margin-top: 10px;
     animation: bottomIn 1.5s ease-in-out forwards;
     opacity: 0;
     animation-delay: 0.3s;
